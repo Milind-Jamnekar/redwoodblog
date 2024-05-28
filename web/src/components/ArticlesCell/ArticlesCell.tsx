@@ -1,6 +1,6 @@
+import { SimpleGrid } from '@mantine/core'
 import type { ArticlesQuery, ArticlesQueryVariables } from 'types/graphql'
 
-import { Link, routes } from '@redwoodjs/router'
 import type {
   CellSuccessProps,
   CellFailureProps,
@@ -33,10 +33,10 @@ export const Failure = ({ error }: CellFailureProps) => (
 
 export const Success = ({ articles }: CellSuccessProps<ArticlesQuery>) => {
   return (
-    <>
+    <SimpleGrid cols={{ base: 1, md: 4 }} spacing="xl" mt={50}>
       {articles.map((article) => (
         <Article key={article.id} article={article} />
       ))}
-    </>
+    </SimpleGrid>
   )
 }
