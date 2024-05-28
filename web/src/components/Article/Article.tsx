@@ -16,7 +16,11 @@ const Article = ({ article }: Props) => {
         </Link>
       </Card.Section>
 
-      <Badge style={{position:'absolute'}} variant="gradient" gradient={{ from: 'yellow', to: 'red' }}>
+      <Badge
+        style={{ position: 'absolute' }}
+        variant="gradient"
+        gradient={{ from: 'yellow', to: 'red' }}
+      >
         outstanding
       </Badge>
 

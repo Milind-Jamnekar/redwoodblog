@@ -1,5 +1,4 @@
 import { ColorSchemeScript, MantineProvider } from '@mantine/core'
-import theme from 'config/mantine.config'
 
 import { FatalErrorBoundary, RedwoodProvider } from '@redwoodjs/web'
 import { RedwoodApolloProvider } from '@redwoodjs/web/apollo'
@@ -18,7 +17,7 @@ const App = () => (
   <FatalErrorBoundary page={FatalErrorPage}>
     <RedwoodProvider titleTemplate="%PageTitle | %AppTitle">
       <AuthProvider>
-        <MantineProvider theme={theme}>
+        <MantineProvider defaultColorScheme="dark">
           <ColorSchemeScript />
           <MantineProvider>
             <RedwoodApolloProvider useAuth={useAuth}>

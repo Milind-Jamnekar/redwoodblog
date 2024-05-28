@@ -1,9 +1,8 @@
-import * as React from 'react'
-import type { GlobalTypes } from '@storybook/csf'
-import type { StoryFn, StoryContext } from '@storybook/react'
 import { MantineProvider } from '@mantine/core'
-import theme from 'config/mantine.config'
 import '@mantine/core/styles.css'
+import type { GlobalTypes } from '@storybook/csf'
+import type { StoryContext, StoryFn } from '@storybook/react'
+import theme from 'config/mantine.config'
 /** @type { import("@storybook/csf").GlobalTypes } */
 export const globalTypes: GlobalTypes = {}
 /**
